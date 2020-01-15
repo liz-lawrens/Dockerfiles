@@ -142,3 +142,4 @@ for dep in .2 .1; do
     sudo docker build --network=host --file="Dockerfile$dep" -t "$image:latest" . $(env | grep -E '_(proxy)=' | sed 's/^/--build-arg /')   
 done  
 ```
+
